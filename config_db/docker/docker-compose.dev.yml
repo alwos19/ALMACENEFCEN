@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+    almacen-postgres-db:
+      container_name: almacen-postgres-db
+      build:
+        context: .
+        dockerfile: Dockerfile
+      volumes:
+        - ../almacen-postgres-data:/var/lib/postgresql/data
+      env_file:
+        - ../.env
+      ports:
+        - "5433:5432"
+      networks:
+        - almacen-network
+
+networks:
+    almacen-network:
+        external: True
+
+
+    
