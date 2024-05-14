@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 #DB
-config_db
+config_db/.env
+config_db/almacen-postgres-data
