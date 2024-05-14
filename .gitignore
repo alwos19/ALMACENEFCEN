@@ -1,1 +1,2 @@
-/config_db
+config_db/almacen-postgres-data
+config_db/.env
